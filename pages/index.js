@@ -14,10 +14,9 @@ export default function Home() {
         <meta name="description" content="Frontierx lorem ipsum" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Menu />
+      <GradientBox />
       <main className={styles.main}>
-        <Menu />
-        <GradientBox />
         <MainBox />
         <Content />
       </main>
