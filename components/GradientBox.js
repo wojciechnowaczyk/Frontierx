@@ -1,8 +1,6 @@
 const GradientBox = () => {
   return (
-    <div>
-      <p>GradientBox</p>
-    </div>
+    <div className="w-full h-1.5 bg-gradient-to-r from-blueberry to-redSalsa" />
   );
 };
 
