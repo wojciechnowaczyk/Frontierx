@@ -17,7 +17,9 @@ export default function Home() {
       </Head>
       <Menu />
       <GradientBox />
-      <main className={styles.main}>
+      <main
+        className={`${styles.main} bg-gradient-to-b from-[#2E2D66] via-[#3A273F] to-[#181818]`}
+      >
         <MainBox />
         <Content />
       </main>
