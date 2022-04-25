@@ -1,4 +1,4 @@
-import HorizontalLogotype from "../images/HorizontalLogotype";
+import { HorizontalLogotype } from "../images/HorizontalLogotype";
 import MagnifyingGlass from "../images/MagnifyingGlass";
 import en from "../lozalizations/en.json";
 
