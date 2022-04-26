@@ -12,11 +12,11 @@ import Tab2Icon from "../../images/Tab2Icon";
 const Tab2Content = () => {
   const [activeCard, setActiveCard] = useState("");
   return (
-    <div className="grid grid-cols-2 gap-4 ">
+    <div className="grid xl:grid-cols-2 sm:grid-cols-1 gap-4 ">
       <Box icon={<Tab2Icon />}>
         <div className="pr-[92px]">
-          {en.contentTab}
-          <div className="grid grid-cols-2 gap-4 mt-[42px]">
+          <p>{en.contentTab}</p>
+          <div className="grid xl:grid-cols-2 sm:grid-cols-1 gap-4 mt-[42px]">
             <IconHyperlink title="LoremIpsum.com" icon={<ExternalLink />} />
             <IconHyperlink title="@Loremipsum" icon={<InstagramLogotype />} />
             <IconHyperlink title="@Loremipsum" icon={<TwitchLogotype />} />
@@ -25,7 +25,7 @@ const Tab2Content = () => {
         </div>
       </Box>
       <Box icon={<Tab2Icon />}>
-        <div className="grid grid-cols-3 gap-4 h-[317px] overflow-y-auto pr-[19px] mr-[24px]">
+        <div className="grid xl:grid-cols-3 sm:grid-cols-1 gap-4 h-[317px] overflow-y-auto pr-[19px] mr-[24px]">
           <Card
             topTitle="Accessories & Ears"
             mainTitle="Lorem ipsum"

@@ -26,7 +26,7 @@ export default function Home() {
         <div className="w-full pt-[41px]">
           <Image src={Header} alt="Main Header" />
         </div>
-        <div className=" pb-[13px] translate-y-[-50%] w-[149px] h-[149px]">
+        <div className=" pb-[13px] translate-y-[-50%] w-[70px] h-[70px] md:w[100px] md:h-[100px] lg:w-[149px] lg:h-[149px]">
           <Image src={HeaderCircle} alt="HeaderCircle" />
         </div>
         <h1 className="font-extrabold text-white text-[45px] mb-1.5 mt-[-50px]">

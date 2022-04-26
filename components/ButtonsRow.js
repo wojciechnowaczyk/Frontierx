@@ -9,7 +9,7 @@ const ButtonsRow = ({ activeTab, setActiveTab }) => {
     return (
       <button
         onClick={() => setActiveTab(id)}
-        className={`justify-center items-center py-4 px-8 w-[11.5rem] h-[3.125] flex text-white rounded-[5px] ${
+        className={`justify-center items-center mb-[15px] md:mb-0 py-4 px-8 w-[11.5rem] h-[3.125] flex text-white rounded-[5px] ${
           activeTab === id ? "bg-codGray" : "bg-codGrayInActive"
         }`}
       >
@@ -18,7 +18,7 @@ const ButtonsRow = ({ activeTab, setActiveTab }) => {
     );
   };
   return (
-    <div className="flex justify-between flex-row w-[592px] mb-[74px]">
+    <div className="flex justify-between flex-col md:flex-row w-[592px] mb-[74px] items-center">
       <Tab id="Tab1">
         <Tab1Icon />
         <p className="ml-1.5 font-extrabold text-[15px]">{en.tabTitle}</p>

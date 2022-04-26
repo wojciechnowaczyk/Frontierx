@@ -5,7 +5,7 @@ import en from "../lozalizations/en.json";
 const Box = ({ icon, children }) => {
   const [isBoxExtended, setBoxExtension] = useState(false);
   return (
-    <div className="w-[591px] rounded">
+    <div className="ms:w-full md:w-[591px] rounded">
       <button
         className="w-full h-[76px] flex flex-row text-white text-base font-extrabold px-7 justify-between items-center bg-codGrayInActive "
         onClick={() => setBoxExtension(!isBoxExtended)}
@@ -19,7 +19,7 @@ const Box = ({ icon, children }) => {
         {isBoxExtended &&
           React.Children.map(children, () => {
             return (
-              <div className="pl-7  text-white pb-14 bg-codGrayInActive">
+              <div className="pl-7 w-full text-white pb-14 bg-codGrayInActive">
                 {children}
               </div>
             );
