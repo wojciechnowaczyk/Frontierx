@@ -4,8 +4,7 @@ import Tab1Icon from "../images/Tab1Icon";
 import Tab2Icon from "../images/Tab2Icon";
 import Tab3Icon from "../images/Tab3Icon";
 
-const ButtonsRow = () => {
-  const [activeTab, setActiveTab] = useState("Tab1");
+const ButtonsRow = ({ activeTab, setActiveTab }) => {
   const Tab = ({ active = false, id, children }) => {
     return (
       <button
@@ -22,15 +21,15 @@ const ButtonsRow = () => {
     <div className="flex justify-between flex-row w-[592px] mb-[74px]">
       <Tab id="Tab1">
         <Tab1Icon />
-        <p className="ml-1.5">{en.tabTitle}</p>
+        <p className="ml-1.5 font-extrabold text-[15px]">{en.tabTitle}</p>
       </Tab>
       <Tab id="Tab2">
         <Tab2Icon />
-        <p className="ml-1.5">{en.tabTitle}</p>
+        <p className="ml-1.5 font-extrabold text-[15px]">{en.tabTitle}</p>
       </Tab>
       <Tab id="Tab3">
         <Tab3Icon />
-        <p className="ml-1.5">{en.tabTitle}</p>
+        <p className="ml-1.5 font-extrabold text-[15px]">{en.tabTitle}</p>
       </Tab>
     </div>
   );
