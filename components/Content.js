@@ -4,7 +4,7 @@ import en from "../lozalizations/en.json";
 
 const Content = () => {
   return (
-    <div>
+    <div className="flex items-center flex-col">
       <ButtonsRow />
       <div className="grid grid-cols-2 gap-4 ">
         <Box>
