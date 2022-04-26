@@ -18,7 +18,7 @@ const ButtonsRow = ({ activeTab, setActiveTab }) => {
     );
   };
   return (
-    <div className="flex justify-between flex-col md:flex-row w-[592px] mb-[74px] items-center">
+    <div className="flex justify-between flex-col md:flex-row md:w-[592px] mb-[74px] items-center">
       <Tab id="Tab1">
         <Tab1Icon />
         <p className="ml-1.5 font-extrabold text-[15px]">{en.tabTitle}</p>
