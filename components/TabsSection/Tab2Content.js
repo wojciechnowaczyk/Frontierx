@@ -18,13 +18,13 @@ const Tab2Content = () => {
           <p>{en.contentTab}</p>
           <div className="grid xl:grid-cols-2 sm:grid-cols-1 gap-4 mt-[42px]">
             <IconHyperlink title="LoremIpsum.com" icon={<ExternalLink />} />
-            <IconHyperlink title="@Loremipsum" icon={<InstagramLogotype />} />
             <IconHyperlink title="@Loremipsum" icon={<TwitchLogotype />} />
+            <IconHyperlink title="@Loremipsum" icon={<InstagramLogotype />} />
             <IconHyperlink title="@Loremipsum" icon={<TwitterLogotype />} />
           </div>
         </div>
       </Box>
-      <Box icon={<Tab2Icon />}>
+      <Box icon={<Tab2Icon />} isTooltip>
         <div className="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 h-[317px] overflow-y-auto pr-[19px] mr-[24px]">
           <Card
             topTitle="Accessories & Ears"
