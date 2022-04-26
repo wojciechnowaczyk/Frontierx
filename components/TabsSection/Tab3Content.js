@@ -12,7 +12,7 @@ import Tab3Icon from "../../images/Tab3Icon";
 const Tab3Content = () => {
   const [activeCard, setActiveCard] = useState("");
   return (
-    <div className="grid xl:grid-cols-2 sm:grid-cols-1 gap-4 ">
+    <div className="grid max-w-[40%] sm:max-w-full grid-cols-1 xl:grid-cols-2  gap-4">
       <Box icon={<Tab3Icon />}>
         <div className="pr-[92px]">
           <p>{en.contentTab}</p>
@@ -25,7 +25,7 @@ const Tab3Content = () => {
         </div>
       </Box>
       <Box icon={<Tab3Icon />}>
-        <div className="grid xl:grid-cols-3 sm:grid-cols-1 gap-4 h-[317px] overflow-y-auto pr-[19px] mr-[24px]">
+        <div className="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-4 h-[317px] overflow-y-auto pr-[19px] mr-[24px]">
           <Card
             topTitle="Accessories & Ears"
             mainTitle="Lorem ipsum"
