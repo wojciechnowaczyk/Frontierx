@@ -15,20 +15,20 @@ const MenuItem = ({ title, marginLeft }) => {
 
 const Menu = () => {
   return (
-    <div className="w-full h-24 bg-black items-center flex px-10 py-6">
+    <div className="w-full md:h-24 bg-black items-center flex flex-col md:flex-row px-10 py-6">
       <div className="w-48">
         <HorizontalLogotype />
       </div>
-      <div className="ml-56 bg-gray-dark h-11 rounded-lg px-5 py-3.5 flex w-screen">
+      <div className="md:ml-5 lg:ml-56 bg-gray-dark h-11 rounded-lg px-5 py-3.5 flex lg:w-screen my-5 md:my-0">
         <MagnifyingGlass />
         <input
           className="text-white 5 outline-0 bg-gray-dark ml-5 text-sm text-gray w-full"
           placeholder={en.searchPlaceholder}
         />
       </div>
-      <MenuItem title={en.menuItem} marginLeft="ml-10" />
-      <MenuItem title={en.menuItem} marginLeft="ml-14" />
-      <MenuItem title={en.menuItem} marginLeft="ml-9" />
+      <MenuItem title={en.menuItem} marginLeft="md:ml-10" />
+      <MenuItem title={en.menuItem} marginLeft="md:ml-14" />
+      <MenuItem title={en.menuItem} marginLeft="md:ml-9" />
     </div>
   );
 };
