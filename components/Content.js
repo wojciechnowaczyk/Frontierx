@@ -1,23 +1,17 @@
-import Box from "./Box";
+import { useState } from "react";
 import ButtonsRow from "./ButtonsRow";
-import en from "../lozalizations/en.json";
+import Tab1Content from "./TabsSection/Tab1Content";
+import Tab2Content from "./TabsSection/Tab2Content";
+import Tab3Content from "./TabsSection/Tab3Content";
 
 const Content = () => {
+  const [activeTab, setActiveTab] = useState("Tab1");
   return (
-    <div>
-      <ButtonsRow />
-      <div className="grid grid-cols-2 gap-4 ">
-        <Box>
-          <div>{en.contentTab}</div>
-        </Box>
-        <Box>
-          <div>{en.contentTab}</div>
-        </Box>
-        <div className="col-span-1" />
-        <Box>
-          <div>{en.contentTab}</div>
-        </Box>
-      </div>
+    <div className="flex items-center flex-col">
+      <ButtonsRow activeTab={activeTab} setActiveTab={setActiveTab} />
+      {activeTab === "Tab1" && <Tab1Content />}
+      {activeTab === "Tab2" && <Tab2Content />}
+      {activeTab === "Tab3" && <Tab3Content />}
     </div>
   );
 };

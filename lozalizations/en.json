@@ -1,5 +1,7 @@
 {
   "contentTab": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor mi ut luctus blandit. Maecenas rutrum mollis sem ac varius. Mauris vestibulum tortor eget sem egestas, sit amet pharetra erat tincidunt. Donec et rhoncus felis, at efficitur dui. Sed sit amet augue volutpat turpis euismod luctus. Phasellus fermentum risus a massa elementum, eu elementum lacus laoreet.",
   "menuItem": "Lorem",
-  "searchPlaceholder": "Lorem ipsum"
+  "searchPlaceholder": "Lorem ipsum",
+  "tabTitle": "Lorem ipsum",
+  "rowTitle": "Lorem ipsum"
 }
