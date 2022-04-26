@@ -6,7 +6,9 @@ const Arrow = ({ width = 12, height = 8 }) => {
       height={height}
       fill="none"
       viewBox="0 0 12 8"
+      role="img"
     >
+      <title id="arrow">Arrow</title>
       <path
         fill="#fff"
         d="M5.886 4.579L10.465 0l1.308 1.308-5.887 5.886L0 1.308 1.308 0l4.578 4.579z"

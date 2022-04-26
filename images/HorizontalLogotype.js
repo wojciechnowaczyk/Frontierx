@@ -11,7 +11,9 @@ export const HorizontalLogotype = ({
       height={height}
       fill={color}
       viewBox="0 0 195 23"
+      role="img"
     >
+      <title id="horizontalLogotype">Fr0ontierx logotype</title>
       <path fill="url(#pattern0)" d="M0 0H195V23H0z"></path>
       <defs>
         <pattern
