@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Tab1Icon from "../images/Tab1Icon";
 import Arrow from "../images/Arrow";
 import en from "../lozalizations/en.json";
 
-const Box = ({ children }) => {
+const Box = ({ icon, children }) => {
   const [isBoxExtended, setBoxExtension] = useState(false);
   return (
     <div className="w-[591px] rounded">
@@ -12,7 +11,7 @@ const Box = ({ children }) => {
         onClick={() => setBoxExtension(!isBoxExtended)}
       >
         <div className="flex flex-row items-center">
-          <Tab1Icon /> <p className="ml-1.5">{en.rowTitle}</p>
+          {icon} <p className="ml-1.5">{en.rowTitle}</p>
         </div>
         <Arrow />
       </button>
@@ -20,7 +19,7 @@ const Box = ({ children }) => {
         {isBoxExtended &&
           React.Children.map(children, () => {
             return (
-              <div className="pl-7 pr-[92px] text-white pb-14 bg-codGrayInActive">
+              <div className="pl-7  text-white pb-14 bg-codGrayInActive">
                 {children}
               </div>
             );

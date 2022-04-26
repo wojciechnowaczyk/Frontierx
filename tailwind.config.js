@@ -15,6 +15,7 @@ module.exports = {
         redSalsa: "#FC364C",
         codGray: "rgba(13,13,13,1)",
         codGrayInActive: "rgba(13,13,13,0.5)",
+        delta: "#8E8B8F",
       },
       borderRadius: {
         lg: "0.625rem",
