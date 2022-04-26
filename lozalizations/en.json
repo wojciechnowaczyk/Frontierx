@@ -3,5 +3,8 @@
   "menuItem": "Lorem",
   "searchPlaceholder": "Lorem ipsum",
   "tabTitle": "Lorem ipsum",
-  "rowTitle": "Lorem ipsum"
+  "rowTitle": "Lorem ipsum",
+  "title": "Lorem ipsum",
+  "created": "Created by: ",
+  "mainDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
 }

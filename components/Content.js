@@ -7,7 +7,7 @@ import Tab3Content from "./TabsSection/Tab3Content";
 const Content = () => {
   const [activeTab, setActiveTab] = useState("Tab1");
   return (
-    <div className="flex items-center flex-col">
+    <div className="flex items-center flex-col mt-[60px]">
       <ButtonsRow activeTab={activeTab} setActiveTab={setActiveTab} />
       {activeTab === "Tab1" && <Tab1Content />}
       {activeTab === "Tab2" && <Tab2Content />}
