@@ -20,3 +20,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #1c1c1c;
+  border: 1px solid #565656;
+  border-radius: 100px;
+  background-clip: content-box;
+  scrollbar-width: thin;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  width: 1px;
+}

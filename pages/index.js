@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Content from "../components/Content";
@@ -11,6 +12,10 @@ const Header = require("../images/Header.png");
 const HeaderCircle = require("../images/HeaderCircle.png");
 
 export default function Home() {
+  useEffect(() => {
+    document.querySelector("body").classList.add("scrollbar");
+    document.querySelector("body").classList.add("scrollbar=thin");
+  }, []);
   return (
     <div className={styles.container}>
       <Head>
