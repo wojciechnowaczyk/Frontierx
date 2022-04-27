@@ -16,11 +16,13 @@ module.exports = {
         codGray: "rgba(13,13,13,1)",
         codGrayInActive: "rgba(13,13,13,0.5)",
         delta: "#8E8B8F",
+        matteBlack: "#1C1C1C",
+        graniteGray: "#565656",
       },
       borderRadius: {
         lg: "0.625rem",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
