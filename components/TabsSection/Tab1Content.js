@@ -12,7 +12,7 @@ import Tab1Icon from "../../images/Tab1Icon";
 const Tab1Content = () => {
   const [activeCard, setActiveCard] = useState("");
   return (
-    <div className="grid max-w-[40%] sm:max-w-full grid-cols-1 xl:grid-cols-2  gap-4">
+    <div className="grid  sm:max-w-full grid-cols-1 xl:grid-cols-2  gap-4">
       <Box icon={<Tab1Icon />}>
         <div className="pr-[92px]">
           <p>{en.contentTab}</p>

@@ -9,7 +9,7 @@ const ButtonsRow = ({ activeTab, setActiveTab }) => {
     return (
       <button
         onClick={() => setActiveTab(id)}
-        className={`justify-center items-center mb-[15px] md:mb-0 py-4 px-8 w-[11.5rem] h-[3.125] flex text-white rounded-[5px] ${
+        className={`justify-center items-center mb-[15px] md:mb-0 py-4 px-8 md:w-[11.5rem] h-[3.125] flex text-white rounded-[5px] ${
           activeTab === id ? "bg-codGray" : "bg-codGrayInActive"
         }`}
       >
